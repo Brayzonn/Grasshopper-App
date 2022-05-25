@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    <link href="main.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@500&family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Grasshopper</title>
+</head>
+<body class="body-main">
+        <div class="container">
+            <!-- available in spanish header -->
+            <div class="top-header-highlight">
+                <p>Now available in Spanish!</p>
+            </div>
+
+
+            <!-- header section with nav and menu list -->
+            <header>
+                <img src="https://grasshopper.app/assets/static/images/demo/demo__logo-grasshopper-lockup.svg" class="grasshop-main">
+
+                <div class="ham-menu-main">
+                    <input type="checkbox" class="chkbx">
+                    <div class="ham-menu"><div></div></div> 
+                </div>
+
+                <nav class="nav-main">
+                    <div class="nav-header">
+                        <img src="https://grasshopper.app/assets/static/images/common/gh_icon.svg" class="grasshop-logo">
+
+                        <div class="ham-close">
+                            <div class="ham-menu2"><div></div></div> 
+                        </div>
+                    </div>
+
+                    <ul>
+                        <a href="#"><li class="navv-list" id="navv-list1">What is Coding</li></a>
+                        <a href="#"><li class="navv-list" id="navv-list2">Curriculum</li></a>
+                        <a href="#"><li class="navv-list" id="navv-list3">Glossary</li></a>
+                        <a href="#"><li class="navv-list" id="navv-list4">About Us</li></a>
+                        <a href="#"><li class="navv-list" id="navv-list5">FAQ</li></a>
+                    </ul> 
+
+                    <div class="sign-in">
+                        <a href="#" class="getapp-btn">Get the App</a>
+                    </div>
+                </nav>
+            </header>
+
+
+            <!-- showcase -->
+            <div class="showcase">
+                
+                <div class="showcase-headers">
+                    <h1>Welcome to Grasshopper,</h1>  
+                    <h1>the coding app for beginners</h1>
+                </div>
+
+                <div class="learn-to-code-p">
+                    <p>Learning to code</p>
+                    <p class="changing-txts">expands your network</p>
+                </div>
+
+                <input type="button" class="shwcs-btn" onclick = "window.location.href = 'https://google.com'" value="Start coding today">
+
+                <div class="showcase-inner">
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__bush-dark.svg">
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__pixel.png"> 
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__bush-light.svg">
+                </div>
+            </div>
+
+            <!-- best ways to start coding sec -->
+            <div class="best-ways">
+
+                <h3>The best way to start your coding adventure.</h3>
+
+                <div class="way">
+                    <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__waving.svg">
+                    <p>Learn with fun, quick lessons on your phone that teach you to write real JavaScript.</p>
+                </div>
+
+                <div class="way">
+                    <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__coding.svg">
+                    <p>Move through progressively challenging levels as you develop your abilities.</p>
+                </div>
+
+                <div class="way">
+                    <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__journey.svg">
+                    <p>Graduate with fundamental programming skills for your next step as a coder.</p>
+                </div>
+            </div>
+
+            <!-- grasshopper stories----------------------------------------- -->
+
+            <!-- <div class="grasshop-stories">
+
+                <div class="grasshop-story-header">
+                    <h2>Grasshopper Stories</h2>
+                </div>
+
+                <div class="stories-con">
+                    <div class="story" id="box1">
+                        <div class="image">
+                            <img src="https://grasshopper.app/assets/static/images/home-stories/user2.jpg">
+                            <img src="https://grasshopper.app/assets/static/images/common/quotes.svg">
+                        </div>
+
+                        <div class="story-txt">
+                            <P>Grasshopper helped me achieve basic understanding of coding. Now, I know that I can see myself in this field.</P>
+                            <h3>Brianna</h3>
+                        </div>
+                    </div>
+
+                    <div class="story" id="box2">
+                        <div class="image">
+                            <img src="https://grasshopper.app/assets/static/images/home-stories/user4.jpg">
+                            <img src="https://grasshopper.app/assets/static/images/common/quotes.svg">
+                        </div>
+
+                        <div class="story-txt">
+                            <P>Grasshopper helped me achieve basic understanding of coding. Now, I know that I can see myself in this field.</P>
+                            <h3>Dave</h3>
+                        </div>
+                    </div>
+
+                    <div class="story" id="box3">
+                        <div class="image">
+                            <img src="https://grasshopper.app/assets/static/images/home-stories/user1.jpg">
+                            <img src="https://grasshopper.app/assets/static/images/common/quotes.svg">
+                        </div>
+
+                        <div class="story-txt">
+                            <P>This is the most user-friendly interactive app [where] challenges are structured like fill-in-the-blanks puzzles [and] animations and confetti ... demonstrate how code can bring things to life.</P>
+                            <h3>Alverson</h3>
+                        </div>
+                    </div>
+
+                    <div class="story" id="box4">
+                        <div class="image">
+                            <img src="https://grasshopper.app/assets/static/images/home-stories/user3.jpg">
+                            <img src="https://grasshopper.app/assets/static/images/common/quotes.svg">
+                        </div>
+
+                        <div class="story-txt">
+                            <P>I like Grasshopper because it allows anyone with or without experience in coding to jump right in and have fun along the way.</P>
+                            <h3>Zhavia</h3>
+                        </div>
+                    </div>
+
+                    <div class="story" id="box5">
+                        <div class="image">
+                            <img src="https://grasshopper.app/assets/static/images/home-stories/user3.jpg">
+                            <img src="https://grasshopper.app/assets/static/images/common/quotes.svg">
+                        </div>
+
+                        <div class="story-txt">
+                            <P>I like Grasshopper because it allows anyone with or without experience in coding to jump right in and have fun along the way.</P>
+                            <h3>Zhavia</h3>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+
+            <!-- learn to code anywhere -------------------------------------------->
+
+            <div class="code-anywhere">
+                <div class="code-anywhere-img-top">
+                    <img src="https://grasshopper.app/assets/static/images/home-learn-to-code/devices.svg">
+                </div>
+
+                <div class="code-anywhere-txt">
+                    <h3>Learn to code anywhere.</h3>
+                    <p>Grasshopper is available on iOS, Android, and all web browsers. Your progress syncs seamlessly between devices.</p>
+                    <img src = 'https://grasshopper.app/assets/static/images/home-learn-to-code/icons__android-ios.png'>
+                </div>
+
+                <div class="code-anywhere-img-bottom">
+                    <img src="https://grasshopper.app/assets/static/images/home-learn-to-code/grasshopper__practice__meditate.svg">
+                </div>
+            </div>
+
+            <!-- features section=---------------------------------------- -->
+
+            <div class="features-all">
+                <div class="feature-inner">
+                    <img src="https://grasshopper.app/assets/static/images/common/icon1_visual_puzzles.png">
+                    <p>Visual puzzles develop your problem-solving skills and solidify coding concepts.</p>
+                    <img src="https://grasshopper.app/assets/static/images/common/feature__android-1.png">
+                </div>
+
+                <div class="feature-inner">
+                    <img src="https://grasshopper.app/assets/static/images/common/icon2_industry_standard.png">
+                    <p>Use industry-standard JavaScript with just a few taps on your phone.</p>
+                    <img src="https://grasshopper.app/assets/static/images/common/feature__android-2.png">
+                </div>
+
+                <div class="feature-inner">
+                    <img src="https://grasshopper.app/assets/static/images/common/icon3_feedback.png">
+                    <p>Real-time feedback guides you like a teacher.</p>
+                    <img src="https://grasshopper.app/assets/static/images/common/feature__android-3.png">
+                </div>
+
+                <div class="feature-inner">
+                    <img src="https://grasshopper.app/assets/static/images/common/icon4_achievements.png">
+                    <p>Collect achievements as you learn new skills.</p>
+                    <img src="https://grasshopper.app/assets/static/images/common/feature__android-4.png">
+                </div>
+
+                <div class="feature-inner">
+                    <img src="https://grasshopper.app/assets/static/images/common/icon5_laptop_tablet.png">
+                    <p>Put your learning into practice with full projects on your laptop or tablet.</p>
+                    <div class="p"></div>
+                    <img src="https://grasshopper.app/assets/static/images/common/feature__laptop.png" class="laptop-l">
+                </div>
+            </div>
+
+            <!-- learn concepts ------------------------------------------------->
+
+            <div class="learn-concepts">
+                <h3>Learn concepts that apply to any programming language</h3>
+
+                <div class="concepts">
+                    <p>Control Flow</p>
+                    <p>Variable</p>
+                    <p>Object Editing</p>
+                    <p>Animation</p>
+                    <p>Callbacks</p>
+                    <p>Array</p>
+                    <p>Operators</p>
+                    <p>Recursion</p>
+                    <p>String Manipulation</p>
+                    <p>Loops</p>
+                    <p>and more...</p>
+                </div>
+            </div>
+
+            <!-- Get started---------------------------------------------------------- -->
+
+            <div class="get-started-adventure">
+                <h3>Get started on your adventure in coding with Grasshopper.</h3>
+
+                <button>Start coding today</button>
+
+                <div class="animation-box">
+                    <img src="https://grasshopper.app/assets/static/images/section-get-started/section--get-started__cloud.svg">
+                    <img src="https://grasshopper.app/assets/static/images/section-get-started/section--get-started__cloud.svg">
+                    <img src="https://grasshopper.app/assets/static/images/section-get-started/section--get-started__cloud.svg">
+                </div>
+
+                <div class="grasshop-holder">
+                    <img src="https://grasshopper.app/assets/static/images/section-get-started/section--get-started__grasshopper-mama.svg">
+                </div>
+            </div>
+
+            <!-- footer section --------------------------------------------------------->
+
+            <footer>
+                <div class="top-footer">
+                    <div class="navigation">
+                        <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#"><li>What is coding</li></a>
+                            <a href="#"><li>About</li></a>
+                            <a href="#"><li>Email us</li></a>
+                            <a href="#"><li>FAQ</li></a>
+                        </ul>
+                    </div>
+    
+                    <div class="terms-privacy">
+                        <a href="#">Terms of service</a>
+                        <a href="#">Privacy policy</a>
+                    </div>
+                </div>
+
+                <div class="bottom-footer">
+                    <img src="https://grasshopper.app/assets/static/images/common/code-with-google.v2.png">
+                </div>
+
+
+
+            </footer>
+        </div>
+
+
+        <script>
+
+            const navMain = document.querySelector('.nav-main')
+            const grasshopperLogo = document.querySelector('.grasshop-logo')
+            const hamMenu2 =  document.querySelector('.ham-menu2')
+
+            //opening nav menu-----------------------------------------------------------
+            document.querySelector('.chkbx').addEventListener('change', checkBox=>{
+
+                //default positions for all animated elements
+                document.querySelector('.grasshop-main').style.zIndex = '1'
+                document.querySelector('.grasshop-main').style.transition = 'all 1s 0s ease'
+
+                hamMenu2.style.opacity = '0'
+                hamMenu2.style.transition = 'all 0.80s 1.50s ease'
+
+                grasshopperLogo.style.transition = 'all 1s 1s ease'
+                grasshopperLogo.style.transform = 'translateX(-10rem)'
+                grasshopperLogo.style.opacity = '0'
+
+                navList1.style.transition = 'all 1s 1s ease'
+                navList1.style.transform = 'translateX(150px)'
+                navList1.style.opacity = '0'
+
+                navList2.style.transition = 'all 1s 1.20s ease'
+                navList2.style.transform = 'translateX(120px)'
+                navList2.style.opacity = '0'
+
+                navList3.style.transition = 'all 1s 1.40s ease'
+                navList3.style.transform = 'translateX(90px)'
+                navList3.style.opacity = '0'
+
+                navList4.style.transition = 'all 1s 1.60s ease'
+                navList4.style.transform = 'translateX(60px)'
+                navList4.style.opacity = '0'
+
+                navList5.style.transition = 'all 1s 1.80s ease'
+                navList5.style.transform = 'translateX(30px)'
+                navList5.style.opacity = '0'
+
+
+                //if hamburber menu is clicked for nav menu to be displayed
+                if(checkBox.target.checked){
+                    navMain.style.transition = 'all 0.60s 0s ease-in'
+                    navMain.style.transform = 'translateX(0)'
+                    document.querySelector(".body-main").style.overflowY = 'hidden'
+
+                    //MENU list translate x to normal on nav open
+                    document.querySelectorAll('.navv-list').forEach(menuList =>{
+                        menuList.style.opacity = '1'
+                        menuList.style.transform = 'translateX(0)'
+                    })
+
+                    //grasshopper translate-x on nav open
+                    grasshopperLogo.style.transform = 'translateX(0)'
+                    grasshopperLogo.style.opacity = '1'
+
+                    //hamburger closing menu opacity
+                    hamMenu2.style.opacity = '1'
+            
+                    //get app btn animation
+                    document.querySelector('.getapp-btn').style.transition = 'all 0.90s 1.20s ease'
+                    document.querySelector('.getapp-btn').style.transform = 'translateX(0)'
+                    document.querySelector('.getapp-btn').style.opacity = '1'
+
+                }
+
+                else{
+                    document.querySelector('.nav-main').style.transform = 'translateX(-50rem)' 
+                    document.querySelector(".body-main").style.overflowX = 'hidden'
+                }
+
+            })
+
+
+            
+            //closing the nav menu--------------------------------------
+
+            const navList1 = document.getElementById('navv-list1')
+            const navList2 = document.getElementById('navv-list2')
+            const navList3 = document.getElementById('navv-list3')
+            const navList4 = document.getElementById('navv-list4')
+            const navList5 = document.getElementById('navv-list5')
+
+            hamMenu2.addEventListener('click', ()=>{
+
+                //display main grasshopper for a few seconds when nav bar closes
+                const showMainGrass = setInterval(()=>{
+                    document.querySelector('.grasshop-main').style.zIndex = '10'
+                    document.querySelector('.grasshop-main').style.transition = 'all 1s 0s ease'
+                }, 1000)
+
+                setTimeout(() => {
+                    clearInterval(showMainGrass); 
+                }, 1500);
+
+                //unchecks checkbox in hamburger menu after nav menu is closed
+                document.querySelector('.chkbx').checked = false
+
+                //animations for all elements involved
+                navMain.style.transition = 'all 1s 1.60s ease' 
+                navMain.style.transform = 'translateX(-50rem)' 
+
+                document.querySelector(".body-main").style.overflowY = 'visible' 
+
+                grasshopperLogo.style.transition = 'all 1s 0.20s ease'
+                grasshopperLogo.style.transform = 'translateX(-10rem)'
+                grasshopperLogo.style.opacity = '0'
+
+                hamMenu2.style.opacity = '0'
+                hamMenu2.style.transition = 'all 0.80s 1.20s ease'
+                
+                navList1.style.transition = 'all 1s 0.20s ease'
+                navList1.style.transform = 'translateX(150px)'
+                navList1.style.opacity = '0'
+
+                navList2.style.transition = 'all 1s 0.40s ease'
+                navList2.style.transform = 'translateX(120px)'
+                navList2.style.opacity = '0'
+
+                navList3.style.transition = 'all 1s 0.60s ease'
+                navList3.style.transform = 'translateX(90px)'
+                navList3.style.opacity = '0'
+
+                navList4.style.transition = 'all 1s 0.80s ease'
+                navList4.style.transform = 'translateX(60px)'
+                navList4.style.opacity = '0'
+
+                navList5.style.transition = 'all 1s 1s ease'
+                navList5.style.transform = 'translateX(30px)'
+                navList5.style.opacity = '0'
+
+                document.querySelector('.getapp-btn').style.transition = 'all 1s 0.20s ease'
+                document.querySelector('.getapp-btn').style.transform = 'translateX(25px)'
+                document.querySelector('.getapp-btn').style.opacity = '0'
+            })
+
+
+    
+
+
+            // const boxes = []
+            // boxes[0] = document.querySelector('#box1')
+            // boxes[1] = document.querySelector('#box2')
+            // boxes[2] = document.querySelector('#box3')
+            // boxes[3] = document.querySelector('#box4')
+            // boxes[4] = document.querySelector('#box5')
+
+            // var i = 0
+            
+
+            // function slideBox(){
+                
+            //     boxes[i].style.transform = 'translateX(15%)'
+
+            //     if(i < boxes.length - 1){
+            //         i++
+            //     }
+
+            //     else{
+            //         i = 0
+            //     }
+
+            //     setTimeout('slideBox()', 2000)
+            // }
+
+            // window.onload = slideBox
+
+                // setInterval(()=>{
+                // document.querySelectorAll('.story').forEach( storyCon => {
+                // storyCon.style.transform = 'translateX(-100%)'
+                // })
+                // },2000);
+
+                
+
+        </script>
+</body>
+</html>
