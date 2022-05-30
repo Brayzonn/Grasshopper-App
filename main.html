@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <link href="main.css" rel="stylesheet">
+    <link href="main2.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@500&family=Quicksand:wght@500&family=Roboto&display=swap" rel="stylesheet">
@@ -13,6 +14,27 @@
 </head>
 <body class="body-main">
         <div class="container">
+
+            <!-- fixed menu that for large screen. displays when you scroll to the top -->
+            <div class="fixed-menu-largescreen">
+                <div class="header">
+                    <img src="https://grasshopper.app/assets/static/images/common/gh_icon.svg" alt="">
+                    <ul>
+                        <a href="#"><li>What is Coding</li></a>
+                        <a href="#"><li>Curriculum</li></a>
+                        <a href="#"><li>Glossary</li></a>
+                        <a href="#"><li>About Us</li></a>
+                        <a href="#"><li>FAQ</li></a>
+                    </ul>
+                </div>
+
+                <div class="sign-inn">
+                    <a href="#">Sign in</a>
+                </div>
+               
+
+            </div>
+
             <!-- available in spanish header -->
             <div class="top-header-highlight">
                 <p>Now available in Spanish!</p>
@@ -21,8 +43,12 @@
 
             <!-- header section with nav and menu list -->
             <header>
-                <img src="https://grasshopper.app/assets/static/images/demo/demo__logo-grasshopper-lockup.svg" class="grasshop-main">
 
+                <div class="head-imgss">
+                    <img src="https://grasshopper.app/assets/static/images/demo/demo__logo-grasshopper-lockup.svg" class="grasshop-main">
+                    <img src="https://grasshopper.app/assets/static/images/common/logo.blue.svg" class="grasshop-main2">
+                </div>
+            
                 <div class="ham-menu-main">
                     <input type="checkbox" class="chkbx">
                     <div class="ham-menu"><div></div></div> 
@@ -37,7 +63,7 @@
                         </div>
                     </div>
 
-                    <ul>
+                    <ul class="list-all-all">
                         <a href="#"><li class="navv-list" id="navv-list1">What is Coding</li></a>
                         <a href="#"><li class="navv-list" id="navv-list2">Curriculum</li></a>
                         <a href="#"><li class="navv-list" id="navv-list3">Glossary</li></a>
@@ -67,10 +93,16 @@
 
                 <input type="button" class="shwcs-btn" onclick = "window.location.href = 'https://google.com'" value="Start coding today">
 
-                <div class="showcase-inner">
-                    <img src="https://grasshopper.app/assets/static/images/hero/hero__bush-dark.svg">
+                <div class="showcase-inner" onmousemove="doAnimation(event)">
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__bush-dark.svg" class="img-anime">
                     <img src="https://grasshopper.app/assets/static/images/hero/hero__pixel.png"> 
-                    <img src="https://grasshopper.app/assets/static/images/hero/hero__bush-light.svg">
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__bush-light.svg" class="img-anime">
+
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__macbook.png">
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__grasshopper.svg" class="img-anime">
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__tree-dark.svg" class="img-anime">
+                    <img src="https://grasshopper.app/assets/static/images/hero/hero__tree-skinny.svg" class="img-anime">
+
                 </div>
             </div>
 
@@ -79,25 +111,28 @@
 
                 <h3>The best way to start your coding adventure.</h3>
 
-                <div class="way">
-                    <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__waving.svg">
-                    <p>Learn with fun, quick lessons on your phone that teach you to write real JavaScript.</p>
+                <div class="holdd-oops">
+                    <div class="way">
+                        <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__waving.svg">
+                        <p>Learn with fun, quick lessons on your phone that teach you to write real JavaScript.</p>
+                    </div>
+    
+                    <div class="way">
+                        <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__coding.svg">
+                        <p>Move through progressively challenging levels as you develop your abilities.</p>
+                    </div>
+    
+                    <div class="way">
+                        <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__journey.svg">
+                        <p>Graduate with fundamental programming skills for your next step as a coder.</p>
+                    </div>
                 </div>
-
-                <div class="way">
-                    <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__coding.svg">
-                    <p>Move through progressively challenging levels as you develop your abilities.</p>
-                </div>
-
-                <div class="way">
-                    <img src="https://grasshopper.app/assets/static/images/home-touts/adventure__journey.svg">
-                    <p>Graduate with fundamental programming skills for your next step as a coder.</p>
-                </div>
+             
             </div>
 
             <!-- grasshopper stories----------------------------------------- -->
 
-            <!-- <div class="grasshop-stories">
+             <!-- <div class="grasshop-stories">
 
                 <div class="grasshop-story-header">
                     <h2>Grasshopper Stories</h2>
@@ -164,7 +199,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>  -->
 
 
             <!-- learn to code anywhere -------------------------------------------->
@@ -188,36 +223,15 @@
             <!-- features section=---------------------------------------- -->
 
             <div class="features-all">
-                <div class="feature-inner">
-                    <img src="https://grasshopper.app/assets/static/images/common/icon1_visual_puzzles.png">
-                    <p>Visual puzzles develop your problem-solving skills and solidify coding concepts.</p>
-                    <img src="https://grasshopper.app/assets/static/images/common/feature__android-1.png">
-                </div>
+                <!-- <div class="feature-inner" id="feature-inner1">
+                    <div class="hld">
+                      
+                    </div>
+                  
+                   
+                </div> -->
 
-                <div class="feature-inner">
-                    <img src="https://grasshopper.app/assets/static/images/common/icon2_industry_standard.png">
-                    <p>Use industry-standard JavaScript with just a few taps on your phone.</p>
-                    <img src="https://grasshopper.app/assets/static/images/common/feature__android-2.png">
-                </div>
-
-                <div class="feature-inner">
-                    <img src="https://grasshopper.app/assets/static/images/common/icon3_feedback.png">
-                    <p>Real-time feedback guides you like a teacher.</p>
-                    <img src="https://grasshopper.app/assets/static/images/common/feature__android-3.png">
-                </div>
-
-                <div class="feature-inner">
-                    <img src="https://grasshopper.app/assets/static/images/common/icon4_achievements.png">
-                    <p>Collect achievements as you learn new skills.</p>
-                    <img src="https://grasshopper.app/assets/static/images/common/feature__android-4.png">
-                </div>
-
-                <div class="feature-inner">
-                    <img src="https://grasshopper.app/assets/static/images/common/icon5_laptop_tablet.png">
-                    <p>Put your learning into practice with full projects on your laptop or tablet.</p>
-                    <div class="p"></div>
-                    <img src="https://grasshopper.app/assets/static/images/common/feature__laptop.png" class="laptop-l">
-                </div>
+       
             </div>
 
             <!-- learn concepts ------------------------------------------------->
@@ -225,27 +239,64 @@
             <div class="learn-concepts">
                 <h3>Learn concepts that apply to any programming language</h3>
 
-                <div class="concepts">
-                    <p>Control Flow</p>
-                    <p>Variable</p>
-                    <p>Object Editing</p>
-                    <p>Animation</p>
-                    <p>Callbacks</p>
-                    <p>Array</p>
-                    <p>Operators</p>
-                    <p>Recursion</p>
-                    <p>String Manipulation</p>
-                    <p>Loops</p>
-                    <p>and more...</p>
+                <div class="concepts-all">
+                    <div class="concepts">
+                        <p>Control Flow</p>
+                        <p>Variable</p>
+                        <p>Object Editing</p>
+                        <p>Animation</p>
+                        <p>Callbacks</p>
+                        <p>Array</p>
+                        <p>Operators</p>
+                        <p>Recursion</p>
+                        <p>String Manipulation</p>
+                        <p>Loops</p>
+                        <p>and more...</p>
+                    </div>
+
+                    <div class="concepts-2">
+                        <p>Control Flow</p>
+                        <p>Variable</p>
+                        <p>Object Editing</p>
+                        <p>Animation</p>
+                        <p>Callbacks</p>
+                        <p>Array</p>
+                        <p>Operators</p>
+                        <p>Recursion</p>
+                        <p>String Manipulation</p>
+                        <p>Loops</p>
+                        <p>and more...</p>
+                    </div>
+
+                    <div class="concepts-3">
+                        <p>Control Flow</p>
+                        <p>Variable</p>
+                        <p>Object Editing</p>
+                        <p>Animation</p>
+                        <p>Callbacks</p>
+                        <p>Array</p>
+                        <p>Operators</p>
+                        <p>Recursion</p>
+                        <p>String Manipulation</p>
+                        <p>Loops</p>
+                        <p>and more...</p>
+                    </div>
                 </div>
             </div>
 
             <!-- Get started---------------------------------------------------------- -->
 
             <div class="get-started-adventure">
-                <h3>Get started on your adventure in coding with Grasshopper.</h3>
 
-                <button>Start coding today</button>
+                <div class="tex-holder">
+                    <h3>Get started on your adventure in coding with Grasshopper.</h3>
+                </div>
+               
+
+                <div class="holderr">
+                    <button>Start coding today</button>
+                </div>
+              
 
                 <div class="animation-box">
                     <img src="https://grasshopper.app/assets/static/images/section-get-started/section--get-started__cloud.svg">

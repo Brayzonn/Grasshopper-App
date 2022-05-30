@@ -1,2 +1,853 @@
-@media only screen and (min-width: 721px) {
+@media only screen and (min-width: 951px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    :root {
+        --main-green: #45c14e;
+        --sub-green: #dff8eb;
+        --container-color: #4ee8e2;
+        --white: #fcfcfc;
+        --dark-black: #00324b;
+        --dark-black-sub: #002c43;
+        --header-font: 'Nunito', sans-serif;
+        --sub-font: 'Roboto', sans-serif;
+        --header-font-size: 36px;
+    }
+
+    ul{
+        list-style: none;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    body {
+        position: relative;
+        overflow-x: hidden;
+        width: 100vw;
+        background-color: var(--white);
+        font-family: Helvetica, arial, sans-serif;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        /* min-height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+     /* <!-- fixed menu that for large screen. displays when you scroll to the top --> */
+
+     .fixed-menu-largescreen a{
+         text-decoration: none;
+         color:#99ADB7;
+         font-weight: 550;
+     }
+
+     .fixed-menu-largescreen ul{
+         list-style: none;
+     }
+
+
+    .fixed-menu-largescreen{
+        position: fixed;
+        display: flex;
+        top: -8rem;
+        left: 0;
+        width: 100%;
+        min-height: 6rem;
+        background-color: var(--dark-black);
+        z-index: 10;
+        padding: 0 2rem;
+        transition: all 0.70s ease;
+    }
+
+    .fixed-menu-largescreen .header{
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 80%;
+    }
+
+    .fixed-menu-largescreen .header img{
+        position: relative;
+        height: 60px;
+        width: 70px;
+        padding: 0 1.5rem 0 0;
+    }
+
+    .fixed-menu-largescreen .header ul{
+        display: flex;
+        width: calc(100% - 70px);
+    }
+
+    .fixed-menu-largescreen .header a{
+        padding: 1rem;
+    }
+
+    .fixed-menu-largescreen .header li{
+        font-size: 19.50px;
+        /* padding: 1rem; */
+    }
+
+    .fixed-menu-largescreen .sign-inn{
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 20%;
+        font-size: 19.50px;
+        font-weight: 550;
+
+    }
+
+    /* available in spanish---------------------------------------------- */
+
+    .container .top-header-highlight{
+        position: relative;
+        min-height: 4vh;
+        background-color: var(--main-green);
+        color: var(--white);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 550;
+        font-size: 14.50px;
+    }
+
+     /* hide all small screen elements in the header */
+
+     header .grasshop-main{
+        display: none;
+    }
+
+    header .ham-menu-main{
+        display: none;
+    }
+
+    header .nav-header img{
+        display: none;
+    }
+
+    /* header sec-------------------------------------------------------- */
+    header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 3rem 0rem;
+        min-height: 5rem;
+    }
+
+    header .head-imgss{
+        position: relative;
+        width: 25%;
+        /* background-color: #4ee8e2; */
+        padding: 0 0 0 2rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        min-height: 100%;
+    }
+
+    header .grasshop-main2{
+        height: 35px;
+    }
+
+    nav{
+        display: flex;
+        width: 75%;
+        height: 100%;
+        margin: 0 0;
+    }
+
+    header .nav-main ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 84%;
+    }
+
+    
+    /* .list-all-all li{
+         padding: 0 0.40px;  
+    }  */
+
+    .list-all-all a{
+        padding:  0 1rem;
+        font-size: 19px;
+        color: #99ADB7;
+        font-weight: 550;
+        transition: all 0.50s linear;
+    }
+
+    .list-all-all a:hover{
+        color: var(--dark-black-sub);
+    }
+
+    .list-all-all a:nth-child(1){
+        max-width: 30%;
+    }
+
+    .list-all-all a:nth-child(2){
+        max-width: 20%;
+    }
+
+    .list-all-all a:nth-child(3){
+        max-width: 15%;
+    }
+
+    .list-all-all a:nth-child(4){
+        max-width: 20%;
+    }
+
+    .list-all-all a:nth-child(5){
+        max-width: 15%;
+    }
+
+
+    .nav-main .sign-in{
+        position: relative;
+        color: #99ADB7;
+        width: 16%;
+        /* background-color: red; */
+    }
+
+    .nav-main .sign-in a{
+        color: #99ADB7;
+        font-size: 19px;
+        font-weight: 550;
+        transition: all 0.50s ease;
+    }
+
+    .nav-main .sign-in a:hover{
+        color: var(--dark-black-sub);
+    }
+
+    /* showcase section------------------------------------------------------ */
+
+    .showcase{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        padding:2rem 0rem 0 0rem;
+
+    }
+
+    .showcase .showcase-headers{
+        position: relative;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: flex-end; */
+        flex-direction: column;
+        /* text-align: right; */
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    .showcase .showcase-headers h1{
+        font-size: 36px;
+        line-height: 46px;
+        color: #002C43;
+        font-weight: 500;
+    }
+
+    .showcase .learn-to-code-p{
+        position: relative;
+        display: flex;
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    .showcase .learn-to-code-p p{
+        position: relative;
+        display: flex;
+        font-family: var(--sub-font);
+        color: var(--dark-black);
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 30px;
+        padding: 1rem 0.20rem 0.10rem 0.20rem;
+    }
+
+      /* start coding today showcase button */
+
+    .showcase .shwcs-btn{
+        width: 220px;
+        height: 53px;
+        color: var(--white);
+        background-color: var(--main-green);
+        border: 1px solid var(--main-green);
+        border-radius: 25px;
+        font-weight: 600;
+        font-size: 15px;
+        font-family: var(--sub-font);
+        letter-spacing: 0.03rem;
+        margin-left: 10%;
+    }
+
+     /* inner showcase with mobile phone image */
+
+     .showcase .showcase-inner {
+        position: relative;
+        width: 100%;
+        min-height: 40rem;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .showcase .showcase-inner::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('https://grasshopper.app/assets/static/images/hero/hero__background-hills.svg') no-repeat top center/cover;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+    }
+
+    .showcase .showcase-inner img:nth-child(1) {
+        position: relative;
+        /* max-width: 208px;
+        height: 438px; */
+        z-index: 4;
+        top: -1rem;
+        transition: all 0.80s ease;
+    }
+
+    .showcase .showcase-inner img:nth-child(2) {
+        position: absolute;
+        width: 298px;
+        height: 689px;
+        margin-left: 25rem ;
+        z-index: 3;
+        top: -5rem;
+        transition: all 0.80s ease;
+
+    }
+
+    .showcase .showcase-inner img:nth-child(3) {
+        position: absolute;
+        /* max-width: 208px;
+        height: 69px; */
+        top: 29rem;
+        z-index: 2;
+        transition: all 0.80s ease;
+    }
+
+    .showcase .showcase-inner img:nth-child(4) {
+        position: absolute;
+        width: 458px;
+        height: 296px;
+        z-index: 1;
+        margin-left: -10rem;
+        top: 11rem;
+        transition: all 0.80s ease;
+    }
+
+    .showcase .showcase-inner img:nth-child(5) {
+        position: absolute;
+        /* max-width: 208px;
+        height: 69px; */
+        margin-left: 39rem;
+        z-index: 1;
+        transition: all 0.80s ease;
+
+    }
+
+    .showcase .showcase-inner img:nth-child(6) {
+        position: absolute;
+        width: 372px;
+        height: 466px;
+        margin-left: -70%;
+        z-index: 1;
+        transition: all 0.80s ease;
+    }
+
+    .showcase .showcase-inner img:nth-child(7) {
+        position: absolute;
+        width: 372px;
+        height: 466px;
+        margin-left: -54%;
+        z-index: 1;
+        transition: all 0.80s ease;
+    }
+
+      /* best ways to start coding section --------------------------------*/
+
+      .best-ways {
+        position: relative;
+        background-color: var(--sub-green);
+        color: var(--dark-black-sub);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 20rem;
+        padding: 60px 2rem 60px 2rem;
+    }
+
+
+    .best-ways h3 {
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: 500;
+        text-align: center;
+        max-width: 450px;
+        padding-bottom: 30px;
+
+    }
+
+    .best-ways .holdd-oops{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .best-ways .holdd-oops .way p {
+        position: relative;
+        text-align: center;
+        max-width: 450px;
+        font-size: 24px;
+        line-height: 32px;
+        padding: 30px 0;
+        margin: 0 0.30rem;
+        height: 10rem;
+    }
+
+
+    /* learn to code anywhere--------------------------------------- */
+
+    .code-anywhere {
+        position: relative;
+        width: 100%;
+        min-height: 25rem;
+        background-color: #4ee8e2;
+        color: var(--dark-black);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    
+    .code-anywhere .code-anywhere-img-top {
+        position: relative;
+        flex-grow: 1;
+    }
+
+    .code-anywhere .code-anywhere-txt {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-grow: 1;
+    }
+
+    .code-anywhere .code-anywhere-txt h3 {
+        font-size: 36px;
+        line-height: 46px;
+        font-weight: 500;
+        text-align: center;
+        max-width: 650px;
+        color: var(--dark-black-sub);
+    }
+
+    .code-anywhere .code-anywhere-txt p {
+        position: relative;
+        text-align: center;
+        max-width: 650px;
+        font-size: 23px;
+        line-height: 32px;
+        padding: 20px 0;
+        color: var(--dark-black);
+    }
+
+
+    .code-anywhere .code-anywhere-img-bottom{
+        position: relative;
+        flex-grow: 1;
+    }
+
+
+    /* <!-- features section=---------------------------------------- --> */
+    .features-all{
+        position: relative;
+        min-height: 60rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .features-all .feature-inner{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 10rem 5rem;
+    }
+
+    .features-all .feature-inner .hld{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        max-width: 650px;
+        padding: 2rem 6rem 2rem 2rem;
+    }
+
+    .features-all .feature-inner .hld .logo-p{
+        position: relative;
+        font-size: 30px;
+        transition: all 1s ease;
+        height: 150px;
+        padding: 0.30rem;
+    }
+
+    .features-all .feature-inner .logo-img{
+        position: relative;
+        width: 80px;
+        height: 80px;
+        margin: 1rem 0;
+        transition: all 1s ease;
+    }
+
+    .features-all .feature-inner .hld .dot-holder{
+        position: relative;
+        padding: 1rem 0;
+    }
+
+    .features-all .feature-inner .hld .dot-holder .dot{
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 7px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.10s ease;
+    }
+
+    .features-all .feature-inner .disp-img{
+        position: relative;
+        width: 650px;
+        height: 800px;
+        display: flex;
+        justify-content: flex-end;
+        transition: all 1s ease;
+    }
+
+
+    /* learn concepts-------------------------------------------- */
+
+    .learn-concepts {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-height: 30rem;
+        padding: 2rem 1rem 4rem 1rem;
+    }
+
+    .learn-concepts h3 {
+        position: relative;
+        padding: 3rem 0.20rem;
+        text-align: center;
+        font-size: 34px;
+        line-height: 38px;
+        color: var(--dark-black);
+    }
+
+    .learn-concepts .concepts-all{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .learn-concepts .concepts-all .concepts{
+        position: relative;
+        display: flex;
+        animation: slideone 300s linear 4.2s infinite forwards ;
+    }
+
+    .learn-concepts .concepts-all .concepts-2{
+        position: relative;
+        display: flex;
+        animation: slidetwo 300s linear 0.2s infinite forwards;
+        transform: translateX(100rem);
+    }
+
+    .learn-concepts .concepts-all .concepts-3{
+        position: relative;
+        display: flex;
+        animation: slideone 300s linear 16s infinite forwards;
+    }
+
+    @keyframes slideone {
+        0%{transform: translateX(0);}
+        50%{transform: translateX(100rem);}
+        100%{transform: translateX(-100rem);}
+    }
+
+    @keyframes slidetwo {
+        0%{transform: translateX(0);}
+        50%{transform: translateX(-150rem);}
+        100%{transform: translateX(150rem);}
+    }
+
+
+
+    .learn-concepts p {
+        position: relative;
+        margin: 0.90rem 0.50rem;
+        background-color: var(--sub-green);
+        border: 1px solid #dff8eb;
+        border-radius: 30px;
+        width: 240px;
+        height: 60px;
+        font-weight: 600;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--dark-black-sub);
+        letter-spacing: 0.02rem;
+    }
+
+
+    /* get started on adventure---------------------------------------- */ 
+
+    .get-started-adventure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 40rem;
+        background-color: var(--container-color);
+        color: var(--dark-black);
+        padding: 2rem 0rem 0 0rem;
+        overflow: hidden;
+    }
+
+    .get-started-adventure .tex-holder{
+        position: relative;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        min-height: 11rem;
+        margin-top: 10rem;
+        left: -13rem;
+    }
+
+    .get-started-adventure h3 {
+        /* text-align: center; */
+        font-size: 39px;
+        position: relative;
+        max-width: 600px;
+        font-weight: 550;
+        line-height: 49px;
+        padding: 1rem 1rem;
+        z-index: 3;
+    }
+
+    .get-started-adventure .holderr{
+        position: relative;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        /* min-height: 9rem; */
+        left: -13rem;
+        /* margin-left: 25%; */
+    }
+    .get-started-adventure button {
+        width: 230px;
+        height: 55px;
+        background-color: var(--main-green);
+        border: 1px solid var(--main-green);
+        border-radius: 25px;
+        margin: 1rem 1rem;
+        color: var(--white);
+        font-size: 18px;
+        font-weight: 550;
+        z-index: 3;
+    }
+
+
+    
+    .get-started-adventure .animation-box {
+        position: absolute;
+        width: 100%;
+        height: 10rem;
+
+    }
+
+
+    .get-started-adventure .animation-box img:nth-child(1) {
+        position: relative;
+        width: 200px;
+        height: 110px;
+        top: 5%;
+        animation: cloudOne 120s linear 2s infinite;
+        z-index: 1;
+    }
+
+    .get-started-adventure .animation-box img:nth-child(2) {
+        position: absolute;
+        width: 200px;
+        height: 110px;
+        top: -15rem;
+        animation: cloudTwo 120s linear 15s infinite;
+        z-index: 1;
+    }
+
+    .get-started-adventure .animation-box img:nth-child(3) {
+        position: absolute;
+        width: 200px;
+        height: 110px;
+        top: 15rem;
+        right: 0;
+        /* left: -20rem; */
+        animation: cloudThree 120s linear 12s infinite;
+        z-index: 1;
+    }
+
+    /* cloud animations */
+
+    @keyframes cloudOne {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(1280%);
+        }
+    }
+
+    @keyframes cloudTwo {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(1150%);
+        }
+    }
+
+    @keyframes cloudThree {
+        0% {
+            transform: translateX(0%);
+        }
+
+        100% {
+            transform: translateX(-1580%);
+        }
+    }
+
+
+    .get-started-adventure .grasshop-holder {
+        position: relative;
+        width: 100%;
+        height: 50%;
+        left: 10%;
+        /* overflow: hidden; */
+        text-align: center;
+        
+       
+    }
+
+    .get-started-adventure .grasshop-holder img{
+        position: absolute;
+        width: 400px;
+        top: -25rem;
+        z-index: 3;
+    }
+
+
+      /* footer section -----------------------------*/
+
+    footer {
+        position: relative;
+        width: 100%;
+        background-color: var(--dark-black);
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 20rem;
+        padding: 4rem 1rem 1rem 1rem;
+    }
+
+    footer .top-footer {
+        display: flex;
+        width: 70%;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    footer .top-footer a {
+        text-decoration: none;
+        color: var(--sub-green);
+        font-size: 19px;
+        font-weight: 550;
+        letter-spacing: 0.03rem;
+    }
+
+    footer .top-footer li {
+        list-style: none;
+        padding: 0.70rem 0;
+    }
+
+    footer .top-footer .terms-privacy {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .top-footer .terms-privacy a {
+        display: flex;
+        flex-direction: column;
+        padding: 0.70rem 0;
+        color: var(--sub-green);
+        font-size: 19px;
+        font-weight: 550;
+        letter-spacing: 0.03rem;
+    }
+
+    footer .bottom-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--sub-green);
+        height: 5rem;
+    }
+
+    
+
+   
+
+
+
 }
